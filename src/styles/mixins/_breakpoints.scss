@@ -1,0 +1,18 @@
+@mixin mediaSmall() {
+  @media (max-width: getNestedValue($breakpoints, 'sm') + 0px) {
+    @content;
+  }
+}
+
+@mixin mediaMedium() {
+  @media (min-width: getNestedValue($breakpoints, 'sm') + 1px)
+  and (max-width: getNestedValue($breakpoints, 'md') + 0px) {
+    @content;
+  }
+}
+
+@mixin mediaLarge() {
+  @media (min-width: getNestedValue($breakpoints, 'md') + 1px) {
+    @content;
+  }
+}

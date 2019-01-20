@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem renders correctly 1`] = `
+<div>
+  <div>
+    <span>
+      3/25/2017
+    </span>
+    <span>
+      category
+    </span>
+  </div>
+  <div>
+    description
+  </div>
+</div>
+`;

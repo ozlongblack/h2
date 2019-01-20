@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="loading loading--inactive"
+>
+  <div
+    className="loading__screen"
+  >
+    <div
+      className="loading__spinner"
+    >
+      <svg
+        className="loading__circular"
+      >
+        <circle
+          className="loading__circular__path"
+          cx="60"
+          cy="60"
+          fill="none"
+          r="20"
+          strokeMiterlimit="10"
+          strokeWidth="2"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;

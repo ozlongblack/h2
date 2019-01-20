@@ -1,0 +1,43 @@
+$fa-font-path: '../assets/fonts';
+$ion-font-path: '../assets/fonts';
+$breakpoint-sm: 600;
+$breakpoint-md: 1024;
+$navigation-sm: 60;
+$navigation-md: 80;
+$transitionDuration: 500;
+$animationDuration: 250;
+
+$breakpoints: (
+  'sm': $breakpoint-sm,
+  'md': $breakpoint-md,
+);
+
+$navigation: (
+  'sm': $navigation-sm,
+  'md': $navigation-md,
+);
+
+$global-margin: (
+  'sm': 12px,
+  'md': 16px,
+  'lg': 20px,
+);
+
+$global-gutter: (
+  'sm': 8px,
+  'md': 12px,
+  'lg': 16px,
+);
+
+$global-fontsize: (
+  'sm': 10px,
+  'md': 12px,
+  'lg': 14px,
+);
+
+@value breakpointSm: #{$breakpoint-sm};
+@value breakpointMd: #{$breakpoint-md};
+@value navigationSm: #{$navigation-sm};
+@value navigationMd: #{$navigation-md};
+@value animationDuration: #{$animationDuration};
+@value transitionDuration: #{$transitionDuration};

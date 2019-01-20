@@ -1,0 +1,26 @@
+
+
+@mixin button-icon($ButtonConfig) {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: $charcoal;
+  font-size: 24px;
+  line-height: 24px;
+  transition: color #{$animationDuration}ms ease-in-out, border-color #{$animationDuration}ms ease-in-out;
+  cursor: pointer;
+
+  &:focus {
+    border: 1px solid getValue(hoverColor, $ButtonConfig);
+    border-radius: 2px;
+    color: getValue(hoverColor, $ButtonConfig);
+  }
+
+  &:hover {
+    color: getValue(hoverColor, $ButtonConfig);
+  }
+}

@@ -1,0 +1,54 @@
+.sideNavigation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background-color: $green;
+  box-sizing: border-box;
+  transition: width #{$transitionDuration}ms ease-in-out,
+              transform #{$transitionDuration}ms ease-in-out;
+  z-index: 9;
+
+  @include mediaSmall() {
+    width: 100%;
+    padding: {
+      left: getNestedValue($global-margin, 'sm');
+      right: getNestedValue($global-margin, 'sm');
+    }
+  }
+
+  @include mediaMedium() {
+    width: 100%;
+    padding: {
+      left: getNestedValue($global-margin, 'md');
+      right: getNestedValue($global-margin, 'md');
+    }
+  }
+
+  @include mediaLarge() {
+    width: 240px;
+    padding: {
+      left: getNestedValue($global-margin, 'lg');
+      right: getNestedValue($global-margin, 'lg');
+    }
+  }
+
+  &--open {
+  }
+
+  &--closed {
+    transform: translateX(100%);
+  }
+
+  &__close {
+    $ButtonConfig: (hoverColor: $white);
+    @include button-icon($ButtonConfig);
+  }
+
+  &__header {
+    display: flex;
+    height: #{$navigation-md}px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}

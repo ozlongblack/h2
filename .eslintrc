@@ -1,0 +1,83 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "jest/globals": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:flowtype/recommended"
+  ],
+  "plugins": [
+    "react",
+    "flowtype",
+    "jest"
+  ],
+  "settings": {
+    "react": {
+      "createClass": "createReactClass",
+      "pragma": "React",
+      "version": "16.6.3",
+      "flowVersion": "0.86"
+    },
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
+    },
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": [
+          "node_modules",
+          "src/"
+        ]
+      }
+    },
+    "propWrapperFunctions": [
+      "forbidExtraProps"
+    ]
+  },
+  "rules": {
+    "flowtype/require-parameter-type": [
+      2
+    ],
+    "flowtype/require-return-type": [
+      2,
+      "always"
+    ],
+    "flowtype/require-valid-file-annotation": [
+      2,
+      "always"
+    ],
+    "flowtype/require-variable-type": [
+      2
+    ],
+    "jsx-a11y/href-no-hash": "off",
+    "jsx-a11y/label-has-for": "off",
+    "react/forbid-prop-types": [
+      0
+    ],
+    "react/jsx-boolean-value": [
+      1,
+      "always"
+    ],
+    "react/jsx-filename-extension": [
+      0
+    ],
+    "react/display-name": [
+      0,
+      {
+        "ignoreTranspilerName": true
+      }
+    ],
+    "no-bitwise": 0,
+    "no-confusing-arrow": "off",
+    "no-console": "warn",
+    "no-unused-vars": "error",
+    "no-undef": 2,
+    "no-use-before-define": [
+      2,
+      "nofunc"
+    ]
+  }
+}

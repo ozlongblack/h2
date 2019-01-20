@@ -1,0 +1,12 @@
+.scroll-tracker {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 4px;
+  z-index: 9;
+
+  &__gauge {
+    height: 100%;
+    background-color: $green;
+  }
+}
